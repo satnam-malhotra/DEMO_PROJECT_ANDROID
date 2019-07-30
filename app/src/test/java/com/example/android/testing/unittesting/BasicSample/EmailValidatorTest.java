@@ -30,7 +30,7 @@ public class EmailValidatorTest {
 
     @Test
     public void emailValidator_CorrectEmailSimple_ReturnsTrue() {
-        assertTrue(EmailValidator.isValidEmail("naemail.com"));
+        assertTrue(EmailValidator.isValidEmail("name@email.com"));
     }
 
     @Test
