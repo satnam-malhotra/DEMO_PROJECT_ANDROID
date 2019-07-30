@@ -2,17 +2,24 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
-            steps {
-                sh './gradlew assembleDebug'
-                archiveArtifacts '**/*.apk'
-                echo "The build stage passed..."
-            }
+        stage('Compile') {
+          steps {
+            // Compile the app and its dependencies
+            sh './gradlew compileDebugSources'
+          }
         }
         stage('Test') {
             steps {
                 sh './gradlew test'
                 echo "Executed unit tests"
+                junit '**/TEST-*.xml'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh './gradlew assembleDebug'
+                archiveArtifacts '**/*.apk'
+                echo "The build stage passed..."
             }
         }
         stage('Deploy') {
@@ -23,9 +30,9 @@ pipeline {
     }
     post{
         always{
-            echo "post-build will always run after build completed"
+            mail to: 'satnam.malhotra@3pillarglobal.com', subject: 'New build available!', body: 'Check it out!'
             // Jenkins cleans the workspace
-            //cleanWs()
+            cleanWs()
         }
     }
 }
