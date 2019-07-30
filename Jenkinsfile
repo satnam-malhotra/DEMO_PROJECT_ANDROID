@@ -9,6 +9,12 @@ pipeline {
             echo "Compile stage passed"
           }
         }
+        stage('Lint Analysis') {
+          steps {
+                // We use checkstyle gradle plugin to perform this
+            sh './gradlew lintStagingDebug'
+          }
+        }
         stage('Test') {
             steps {
                 sh './gradlew test'

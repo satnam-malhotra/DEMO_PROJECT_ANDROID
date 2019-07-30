@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+            "outputFile": "/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/res/values-w820dp/dimens.xml",
+                    "source": "/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/src/main/res/values-w820dp/dimens.xml",
                     "from": {
                         "startLines": "20",
                         "startColumns": "4",

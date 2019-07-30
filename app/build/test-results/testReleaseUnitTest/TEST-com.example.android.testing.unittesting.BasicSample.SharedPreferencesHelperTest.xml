@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.android.testing.unittesting.BasicSample.SharedPreferencesHelperTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-07-30T09:01:03" hostname="ndi-mb-009" time="0.014">
+<testsuite name="com.example.android.testing.unittesting.BasicSample.SharedPreferencesHelperTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-07-30T13:03:43" hostname="ndi-mb-009" time="0.017">
   <properties/>
-  <testcase name="sharedPreferencesHelper_SavePersonalInformationFailed_ReturnsFalse" classname="com.example.android.testing.unittesting.BasicSample.SharedPreferencesHelperTest" time="0.012"/>
+  <testcase name="sharedPreferencesHelper_SavePersonalInformationFailed_ReturnsFalse" classname="com.example.android.testing.unittesting.BasicSample.SharedPreferencesHelperTest" time="0.015"/>
   <testcase name="sharedPreferencesHelper_SaveAndReadPersonalInformation" classname="com.example.android.testing.unittesting.BasicSample.SharedPreferencesHelperTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

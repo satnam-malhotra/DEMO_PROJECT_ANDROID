@@ -15,7 +15,7 @@
         errorLine2="        ~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/build.gradle"
+            file="/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/build.gradle"
             line="27"
             column="9"/>
     </issue>
@@ -32,7 +32,7 @@
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/res/layout/activity_main.xml"
+            file="/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/src/main/res/layout/activity_main.xml"
             line="66"
             column="13"/>
     </issue>
@@ -51,7 +51,7 @@
         errorLine2="     ~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/AndroidManifest.xml"
+            file="/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/src/main/AndroidManifest.xml"
             line="21"
             column="6"/>
     </issue>
@@ -70,7 +70,7 @@
         errorLine2="     ~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/AndroidManifest.xml"
+            file="/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/src/main/AndroidManifest.xml"
             line="21"
             column="6"/>
     </issue>
@@ -88,7 +88,7 @@
         errorLine1="            &lt;Button"
         errorLine2="             ~~~~~~">
         <location
-            file="/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/res/layout/activity_main.xml"
+            file="/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/src/main/res/layout/activity_main.xml"
             line="93"
             column="14"/>
     </issue>
@@ -106,7 +106,7 @@
         errorLine1="            &lt;Button"
         errorLine2="             ~~~~~~">
         <location
-            file="/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/res/layout/activity_main.xml"
+            file="/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/src/main/res/layout/activity_main.xml"
             line="104"
             column="14"/>
     </issue>
@@ -125,7 +125,7 @@
         errorLine2="    ^"
         quickfix="studio">
         <location
-            file="/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/AndroidManifest.xml"
+            file="/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/src/main/AndroidManifest.xml"
             line="21"
             column="5"/>
     </issue>
@@ -142,7 +142,7 @@
         errorLine2="         ~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/res/layout/activity_main.xml"
+            file="/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/src/main/res/layout/activity_main.xml"
             line="46"
             column="10"/>
     </issue>
@@ -160,7 +160,7 @@
         errorLine1="        &lt;EditText"
         errorLine2="         ~~~~~~~~">
         <location
-            file="/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/res/layout/activity_main.xml"
+            file="/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/src/main/res/layout/activity_main.xml"
             line="46"
             column="10"/>
     </issue>
@@ -178,7 +178,7 @@
         errorLine1="        &lt;EditText"
         errorLine2="         ~~~~~~~~">
         <location
-            file="/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/res/layout/activity_main.xml"
+            file="/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/src/main/res/layout/activity_main.xml"
             line="78"
             column="10"/>
     </issue>
@@ -192,7 +192,7 @@
         summary="Using RTL attributes without enabling RTL support"
         explanation="To enable right-to-left support, when running on API 17 and higher, you must set the `android:supportsRtl` attribute in the manifest `&lt;application>` element.&#xA;&#xA;If you have started adding RTL attributes, but have not yet finished the migration, you can set the attribute to false to satisfy this lint check.">
         <location
-            file="/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/AndroidManifest.xml"/>
+            file="/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/src/main/AndroidManifest.xml"/>
     </issue>
 
 </issues>
