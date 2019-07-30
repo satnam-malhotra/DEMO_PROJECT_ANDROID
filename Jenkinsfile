@@ -31,12 +31,7 @@ pipeline {
     }
     post{
         always{
-            mail to: 'satnam.malhotra@3pillarglobal.com',
-            subject: 'New build available!',
-            body: 'Check it out!',
-            from: 'idmeqatesting@gmail.com',
-            port: 465,
-            password: 'Idme@123'
+            mail to: 'satnam.malhotra@3pillarglobal.com', subject: 'New build available!', body: 'Check it out!'
             // Cleaning workspace
             cleanWs()
         }
