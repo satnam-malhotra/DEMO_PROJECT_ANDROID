@@ -6,12 +6,13 @@ pipeline {
           steps {
             // Compile the app and its dependencies
             sh './gradlew compileDebugSources'
+            echo "Compile stage passed"
           }
         }
         stage('Test') {
             steps {
                 sh './gradlew test'
-                echo "Executed unit tests"
+                echo "Test stage passed"
                 junit '**/TEST-*.xml'
             }
         }
@@ -19,7 +20,7 @@ pipeline {
             steps {
                 sh './gradlew assembleDebug'
                 archiveArtifacts '**/*.apk'
-                echo "The build stage passed..."
+                echo "Build stage passed"
             }
         }
         stage('Deploy') {
@@ -30,8 +31,13 @@ pipeline {
     }
     post{
         always{
-            mail to: 'satnam.malhotra@3pillarglobal.com', subject: 'New build available!', body: 'Check it out!'
-            // Jenkins cleans the workspace
+            mail to: 'satnam.malhotra@3pillarglobal.com',
+            subject: 'New build available!',
+            body: 'Check it out!',
+            from: 'idmeqatesting@gmail.com',
+            port: 465,
+            password: 'Idme@123'
+            // Cleaning workspace
             cleanWs()
         }
     }
