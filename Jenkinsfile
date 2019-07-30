@@ -35,10 +35,10 @@ pipeline {
     }
 
     post{
-        always{
+        //always{
          // Cleaning workspace
          // cleanWs()
-        }
+        //}
         success{
             echo env.BUILD_NUMBER
             mail to: EMAIL_TO, from: 'Jenkins_Build',
