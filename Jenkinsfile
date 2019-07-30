@@ -29,16 +29,25 @@ pipeline {
             }
         }
     }
+
+    environment {
+                EMAIL_TO = 'satnam.malhotra@3pillarglobal.com'
+    }
+
     post{
         always{
          // Cleaning workspace
             cleanWs()
         }
         success{
-            mail to: 'satnam.malhotra@3pillarglobal.com', from: 'Jenkins_Build', subject: 'New build available!', body: 'Check it out!'<br> Project: ${env.JOB_NAME} Build Number: ${env.BUILD_NUMBER} <br>
+            mail to: EMAIL_TO, from: 'Jenkins_Build',
+            subject: 'Build passed in Jenkins: $PROJECT_NAME - #$BUILD_NUMBER',
+            body: 'Check console output at $BUILD_URL to view the results. \n\n ${CHANGES} \n\n -------------------------------------------------- \n${BUILD_LOG, maxLines=100, escapeHtml=false}'
         }
         failure{
-            mail to: 'satnam.malhotra@3pillarglobal.com', from: 'Jenkins_Build', subject: 'New build available!', body: 'Build failed'<br> Project: ${env.JOB_NAME} Build Number: ${env.BUILD_NUMBER} <br>
-        }
+           mail to: EMAIL_TO, from: 'Jenkins_Build',
+           subject: 'Build failed in Jenkins: $PROJECT_NAME - #$BUILD_NUMBER',
+           body: 'Check console output at $BUILD_URL to view the results. \n\n ${CHANGES} \n\n -------------------------------------------------- \n${BUILD_LOG, maxLines=100, escapeHtml=false}'
+       }
     }
 }
