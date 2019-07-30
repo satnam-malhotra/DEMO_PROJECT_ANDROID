@@ -35,10 +35,12 @@ pipeline {
     }
 
     post{
-        //always{
+        always{
          // Cleaning workspace
          // deleteDir()
-        //}
+          publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
+
+        }
         success{
             echo env.BUILD_NUMBER
             mail to: EMAIL_TO, from: 'Jenkins_Build',
@@ -51,5 +53,6 @@ pipeline {
            subject: 'Build failed in Jenkins:',
            body: 'Check console output'
        }
+
     }
 }
