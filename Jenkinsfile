@@ -31,7 +31,7 @@ pipeline {
     }
     post{
         always{
-            mail to: 'satnam.malhotra@3pillarglobal.com', from: 'Jenkins', subject: 'New build available!', body: 'Check it out!'
+            mail to: 'satnam.malhotra@3pillarglobal.com', from: 'Jenkins_Build', subject: 'New build available!', body: 'Check it out!'
             // Cleaning workspace
             cleanWs()
         }
