@@ -38,7 +38,7 @@ pipeline {
         always{
          // Cleaning workspace
          // deleteDir()
-          publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
+          publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'app/build/reports/tests/**/index.html', reportName: 'HTML Report', reportTitles: ''])
 
         }
         success{
