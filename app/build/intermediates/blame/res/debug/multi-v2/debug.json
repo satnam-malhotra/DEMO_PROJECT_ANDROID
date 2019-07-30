@@ -1,0 +1,121 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "17,18,19,21,20",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "689,747,803,910,865",
+                        "endColumns": "57,55,61,45,44",
+                        "endOffsets": "742,798,860,951,905"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,113,169,231,277",
+                        "endColumns": "57,55,61,45,44",
+                        "endOffsets": "108,164,226,272,317"
+                    }
+                },
+                {
+                    "source": "/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "17,19,25,20,24,18,23,22,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "689,798,1105,856,1051,748,1009,971,916",
+                        "endColumns": "58,57,55,59,53,49,41,37,54",
+                        "endOffsets": "743,851,1156,911,1100,793,1046,1004,966"
+                    },
+                    "to": {
+                        "startLines": "7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "322,381,439,495,555,609,659,701,739",
+                        "endColumns": "58,57,55,59,53,49,41,37,54",
+                        "endOffsets": "376,434,490,550,604,654,696,734,789"
+                    }
+                },
+                {
+                    "source": "/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "726",
+                        "endColumns": "68",
+                        "endOffsets": "790"
+                    },
+                    "to": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "794",
+                        "endColumns": "68",
+                        "endOffsets": "858"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/build/intermediates/res/merged/debug/values-v21_values-v21.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/res/values-v21/styles.xml",
+                    "from": {
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "726",
+                        "endColumns": "78",
+                        "endOffsets": "800"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "217",
+                        "endColumns": "78",
+                        "endOffsets": "291"
+                    }
+                },
+                {
+                    "source": "/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/res/values-v21/dimens.xml",
+                    "from": {
+                        "startLines": "17,18,19",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "689,745,806",
+                        "endColumns": "55,60,44",
+                        "endOffsets": "740,801,846"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,111,172",
+                        "endColumns": "55,60,44",
+                        "endOffsets": "106,167,212"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/build/intermediates/res/merged/debug/values-w820dp-v13_values-w820dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/src/main/res/values-w820dp/dimens.xml",
+                    "from": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "964",
+                        "endColumns": "57",
+                        "endOffsets": "1017"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "57",
+                        "endOffsets": "108"
+                    }
+                }
+            ]
+        }
+    ]
+}

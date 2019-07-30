@@ -1,0 +1,4 @@
+#Tue Jul 30 14:28:06 IST 2019
+base.0=/Users/satnam.malhotra/Downloads/Android_Demo_Project/BasicSample/app/build/intermediates/transforms/dexMerger/androidTest/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
