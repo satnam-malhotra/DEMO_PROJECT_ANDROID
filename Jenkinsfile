@@ -41,12 +41,12 @@ pipeline {
         }
         success{
             mail to: EMAIL_TO, from: 'Jenkins_Build',
-            subject: 'Build passed in Jenkins: env.BUILD_NUMBER',
+            subject: 'Build passed in Jenkins:' env.BUILD_NUMBER,
             body: 'Check console output at $BUILD_URL to view the results. \n\n ${CHANGES} \n\n -------------------------------------------------- \n${BUILD_LOG, maxLines=100, escapeHtml=false}'
         }
         failure{
            mail to: EMAIL_TO, from: 'Jenkins_Build',
-           subject: 'Build failed in Jenkins: env.BUILD_NUMBER',
+           subject: 'Build failed in Jenkins:' env.BUILD_NUMBER,
            body: 'Check console output at $BUILD_URL to view the results. \n\n ${CHANGES} \n\n -------------------------------------------------- \n${BUILD_LOG, maxLines=100, escapeHtml=false}'
        }
     }
