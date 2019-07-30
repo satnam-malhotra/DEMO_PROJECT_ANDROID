@@ -12,6 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh '/gradlew test'
+                echo "Executed unit tests"
             }
         }
         stage('Deploy') {
