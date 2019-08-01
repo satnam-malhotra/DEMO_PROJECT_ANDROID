@@ -14,6 +14,13 @@ pipeline {
                 sh './gradlew test'
                 echo "Test stage passed"
                 junit '**/TEST-*.xml'
+                publishHTML([allowMissing: false,
+                          alwaysLinkToLastBuild: false,
+                          keepAll: false,
+                          reportDir: 'coverage',
+                          reportFiles: 'app/build/reports/tests/**/index.html',
+                          reportName: 'HTML Report',
+                          reportTitles: 'UT report'])
             }
         }
         stage('Build') {
@@ -37,15 +44,7 @@ pipeline {
     post{
         always{
          // Cleaning workspace
-         // deleteDir()
-          publishHTML([allowMissing: false,
-          alwaysLinkToLastBuild: false,
-          keepAll: false,
-          reportDir: 'coverage',
-          reportFiles: 'app/build/reports/tests/**/index.html',
-          reportName: 'HTML Report',
-          reportTitles: 'UT report'])
-
+         deleteDir()
         }
         success{
             echo env.BUILD_NUMBER
