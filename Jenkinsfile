@@ -16,19 +16,6 @@ pipeline {
                 junit '**/TEST-*.xml'
             }
         }
-        stage('Sonarqube') {
-            environment {
-                scannerHome = tool 'SonarQube Scanner 2.8'
-            }
-            steps {
-                withSonarQubeEnv('SonarQube Scanner 2.8') {
-                    sh "${scannerHome}/bin/sonar-scanner"
-                }
-                timeout(time: 10, unit: 'MINUTES') {
-                    waitForQualityGate abortPipeline: true
-                }
-            }
-        }
         stage('Build') {
             steps {
                 sh './gradlew clean assembleDebug'
@@ -51,7 +38,13 @@ pipeline {
         always{
          // Cleaning workspace
          // deleteDir()
-          publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'app/build/reports/tests/**/index.html', reportName: 'HTML Report', reportTitles: ''])
+          publishHTML([allowMissing: false,
+          alwaysLinkToLastBuild: false,
+          keepAll: false,
+          reportDir: 'coverage',
+          reportFiles: 'app/build/reports/tests/**/index.html',
+          reportName: 'HTML Report',
+          reportTitles: 'UT report'])
 
         }
         success{
