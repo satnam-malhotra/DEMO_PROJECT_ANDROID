@@ -20,8 +20,8 @@ pipeline {
           agent any
           steps {
             script {
-                def scannerHome = tool 'SonarQube Scanner 2.9';
-                withSonarQubeEnv("foo") {
+                def scannerHome = tool 'SonarQube Scanner 2.8';
+                withSonarQubeEnv("sonarqube") {
                   sh "${scannerHome}/bin/sonar-scanner"
                 }
             }
