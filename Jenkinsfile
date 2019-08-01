@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh './gradlew clean assembleDebug'
+                sh './gradlew assembleDebug'
                 archiveArtifacts '**/*.apk'
                 echo "Build stage passed"
             }
