@@ -131,23 +131,6 @@
     </issue>
 
     <issue
-        id="TextFields"
-        severity="Warning"
-        message="This text field does not specify an `inputType`"
-        category="Usability"
-        priority="5"
-        summary="Missing `inputType`"
-        explanation="Providing an `inputType` attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). &#xA;&#xA;The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.&#xA;&#xA;If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
-        errorLine1="        &lt;EditText"
-        errorLine2="         ~~~~~~~~"
-        quickfix="studio">
-        <location
-            file="/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/src/main/res/layout/activity_main.xml"
-            line="46"
-            column="10"/>
-    </issue>
-
-    <issue
         id="Autofill"
         severity="Warning"
         message="Missing `autofillHints` attribute"

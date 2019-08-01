@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jul 30 18:33:34 IST 2019
+#Thu Aug 01 13:50:58 IST 2019
 0.baseType=DIRECTORY
 0.base=/Users/satnam.malhotra/Documents/DEMO_PROJECT/BasicSample/app/build/intermediates/transforms/dexMerger/debug/0
 0.path=classes.dex

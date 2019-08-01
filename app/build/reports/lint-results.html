@@ -173,10 +173,10 @@ document.getElementById(id).style.display = 'none';
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Lint Report: 11 warnings</span>
+      <span class="mdl-layout-title">Lint Report: 10 warnings</span>
       <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation mdl-layout--large-screen-only">
-Check performed at Tue Jul 30 18:33:40 IST 2019      </nav>
+Check performed at Thu Aug 01 13:49:52 IST 2019      </nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -188,7 +188,6 @@ Check performed at Tue Jul 30 18:33:40 IST 2019      </nav>
       <a class="mdl-navigation__link" href="#AllowBackup"><i class="material-icons warning-icon">warning</i>AllowBackup/FullBackupContent Problems (2)</a>
       <a class="mdl-navigation__link" href="#ButtonStyle"><i class="material-icons warning-icon">warning</i>Button should be borderless (2)</a>
       <a class="mdl-navigation__link" href="#GoogleAppIndexingWarning"><i class="material-icons warning-icon">warning</i>Missing support for Firebase App Indexing (1)</a>
-      <a class="mdl-navigation__link" href="#TextFields"><i class="material-icons warning-icon">warning</i>Missing <code>inputType</code> (1)</a>
       <a class="mdl-navigation__link" href="#Autofill"><i class="material-icons warning-icon">warning</i>Use Autofill (2)</a>
       <a class="mdl-navigation__link" href="#RtlEnabled"><i class="material-icons warning-icon">warning</i>Using RTL attributes without enabling RTL support (1)</a>
     </nav>
@@ -224,9 +223,6 @@ Check performed at Tue Jul 30 18:33:40 IST 2019      </nav>
 <tr>
 <td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#GoogleAppIndexingWarning">GoogleAppIndexingWarning</a>: Missing support for Firebase App Indexing</td></tr>
-<tr>
-<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
-<a href="#TextFields">TextFields</a>: Missing <code>inputType</code></td></tr>
 <tr>
 <td class="countColumn">2</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#Autofill">Autofill</a>: Use Autofill</td></tr>
@@ -517,55 +513,6 @@ To suppress this error, use the issue id "GoogleAppIndexingWarning" as explained
 Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="GoogleAppIndexingWarningCardLink" onclick="hideid('GoogleAppIndexingWarningCard');">
 Dismiss</button>            </div>
             </div>
-          </section><a name="TextFields"></a>
-<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="TextFieldsCard" style="display: block;">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Missing inputType</h2>
-  </div>
-              <div class="mdl-card__supporting-text">
-<div class="issue">
-<div class="warningslist">
-<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:46</span>: <span class="message">This text field does not specify an <code>inputType</code></span><br /><pre class="errorlines">
-<span class="lineno">  43 </span>            <span class="prefix">android:</span><span class="attribute">layout_marginTop</span>=<span class="value">"@dimen/activity_vertical_margin"</span>
-<span class="lineno">  44 </span>            <span class="prefix">android:</span><span class="attribute">textAppearance</span>=<span class="value">"?android:attr/textAppearanceMedium"</span>/>
-<span class="lineno">  45 </span>
-<span class="caretline"><span class="lineno">  46 </span>        <span class="tag">&lt;</span><span class="warning"><span class="tag">EditText</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
-</span><span class="lineno">  47 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/userNameInput"</span>
-<span class="lineno">  48 </span>            <span class="prefix">android:</span><span class="attribute">hint</span>=<span class="value">"@string/name_hint"</span>
-<span class="lineno">  49 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"match_parent"</span></pre>
-
-</div>
-<div class="metadata"><div class="explanation" id="explanationTextFields" style="display: none;">
-Providing an <code>inputType</code> attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). <br/>
-<br/>
-The lint detector also looks at the <code>id</code> of the view, and if the id offers a hint of the purpose of the field (for example, the <code>id</code> contains the phrase <code>phone</code> or <code>email</code>), then lint will also ensure that the <code>inputType</code> contains the corresponding type attributes.<br/>
-<br/>
-If you really want to keep the text field generic, you can suppress this warning by setting <code>inputType="text"</code>.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
-To suppress this error, use the issue id "TextFields" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
-<br/></div>
-</div>
-</div>
-<div class="chips">
-<span class="mdl-chip">
-    <span class="mdl-chip__text">TextFields</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Usability</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Warning</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Priority 5/10</span>
-</span>
-</div>
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationTextFieldsLink" onclick="reveal('explanationTextFields');">
-Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="TextFieldsCardLink" onclick="hideid('TextFieldsCard');">
-Dismiss</button>            </div>
-            </div>
           </section><a name="Autofill"></a>
 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="AutofillCard" style="display: block;">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
@@ -582,7 +529,8 @@ Dismiss</button>            </div>
 <span class="caretline"><span class="lineno">  46 </span>        <span class="tag">&lt;</span><span class="warning"><span class="tag">EditText</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
 </span><span class="lineno">  47 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/userNameInput"</span>
 <span class="lineno">  48 </span>            <span class="prefix">android:</span><span class="attribute">hint</span>=<span class="value">"@string/name_hint"</span>
-<span class="lineno">  49 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"match_parent"</span></pre>
+<span class="lineno">  49 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"match_parent"</span> <span class="prefix">android:</span><span class="attribute">inputType</span>=<span class="value">""</span> 
+</pre>
 
 <span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:78</span>: <span class="message">Missing <code>autofillHints</code> attribute</span><br /><pre class="errorlines">
 <span class="lineno">  75 </span>            <span class="prefix">android:</span><span class="attribute">layout_marginTop</span>=<span class="value">"@dimen/activity_vertical_margin_small"</span>
