@@ -16,17 +16,15 @@ pipeline {
                 junit '**/TEST-*.xml'
             }
         }
-        stages {
-           stage("SonarQube Analysis") {
-              agent any
-              steps {
-                script {
-                    def scannerHome = tool 'SonarQube Scanner 2.9';
-                    withSonarQubeEnv("foo") {
-                      sh "${scannerHome}/bin/sonar-scanner"
-                    }
-              }
-           }
+        stage("SonarQube Analysis") {
+          agent any
+          steps {
+            script {
+                def scannerHome = tool 'SonarQube Scanner 2.9';
+                withSonarQubeEnv("foo") {
+                  sh "${scannerHome}/bin/sonar-scanner"
+                }
+            }
           }
         }
         stage('Build') {
