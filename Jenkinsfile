@@ -16,9 +16,9 @@ pipeline {
                 junit '**/TEST-*.xml'
             }
         }
-        stage('Sonarqube') {
+        stage('SonarQube Analysis') {
             environment {
-                scannerHome = tool 'SonarQube Scanner for Jenkins'
+                scannerHome = tool 'SonarQube Scanner 2.8'
             }
             steps {
                 withSonarQubeEnv('sonarqube') {
