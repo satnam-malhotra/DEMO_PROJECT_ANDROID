@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    parameters {
-            string(name: 'Build Variants', defaultValue: 'release', description: 'Default build variant')
-        }
 
     stages {
         stage('Compile') {
@@ -21,7 +18,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh './gradlew assemble'
+                sh './gradlew assembleDebug'
                 archiveArtifacts '**/*.apk'
                 echo "Build stage passed"
             }
