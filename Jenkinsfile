@@ -17,6 +17,7 @@ pipeline {
                 publishHTML([allowMissing: false,
                           alwaysLinkToLastBuild: false,
                           keepAll: false,
+                          reportDir: '',
                           reportFiles: 'app/build/reports/tests/**/index.html',
                           reportName: 'HTML Report',
                           reportTitles: 'UT report'])
