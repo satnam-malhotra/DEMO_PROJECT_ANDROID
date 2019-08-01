@@ -16,18 +16,17 @@ pipeline {
                 junit '**/TEST-*.xml'
             }
         }
-        stage('SonarQube Analysis') {
-            environment {
-                scannerHome = tool 'SonarQube Scanner 2.8'
-            }
-            steps {
-                withSonarQubeEnv('sonarqube') {
-                    sh "${scannerHome}/bin/sonar-scanner"
-                }
-                timeout(time: 10, unit: 'MINUTES') {
-                    waitForQualityGate abortPipeline: true
-                }
-            }
+        stages {
+           stage("SonarQube Analysis") {
+              agent any
+              steps {
+                script {
+                    def scannerHome = tool 'SonarQube Scanner 2.9';
+                    withSonarQubeEnv("foo") {
+                      sh "${scannerHome}/bin/sonar-scanner"
+                    }
+              }
+           }
         }
         stage('Build') {
             steps {
